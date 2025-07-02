@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Same head as index.html -->
+    <title>Tentang Kami - PT. Cipta Hospital Indonesia</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img src="assets/img/logo.png" alt="Logo" class="logo-img" />
+          Cipta Hospital
+        </a>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">
+                <i class="bx bx-home-alt-2"></i>
+                <span>Beranda</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="about.html" class="nav__link active-link">
+                <i class="bx bx-info-circle"></i>
+                <span>Tentang Kami</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="services.html" class="nav__link">
+                <i class="bx bx-plus-medical"></i>
+                <span>Pelayanan</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="doctors.html" class="nav__link">
+                <i class="bx bx-user"></i>
+                <span>Dokter</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">
+                <i class="bx bx-phone"></i>
+                <span>Kontak</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="appointment.html" class="button nav__button">
+          <i class="bx bx-calendar"></i> Buat Janji
+        </a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- About Section -->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__images">
+            <div class="about__orbe"></div>
+            <div class="about__img">
+              <img
+                src="https://img.freepik.com/premium-photo/cologne-kranhaus-business-center-rheinauhafen-waterfront-sunny-morning_1061279-431.jpg?w=1380"
+                alt="Tentang Kami"
+              />
+            </div>
+          </div>
+
+          <div class="about__content">
+            <div class="about__data">
+              <span class="section__subtitle">Tentang Kami</span>
+              <h2 class="section__title">Profil Rumah Sakit<span>.</span></h2>
+              <p class="about__description">
+                PT. Cipta Hospital Indonesia adalah rumah sakit modern yang
+                didirikan pada tahun 2005 dengan komitmen untuk memberikan
+                pelayanan kesehatan terbaik bagi masyarakat.
+              </p>
+            </div>
+
+            <div class="about__accordion">
+              <div class="about__accordion-item">
+                <header class="about__accordion-header">
+                  <i class="bx bx-target-lock about__accordion-icon"></i>
+                  <h3 class="about__accordion-title">Visi</h3>
+                </header>
+                <div class="about__accordion-content">
+                  <p class="about__accordion-description">
+                    Menjadi rumah sakit terdepan dalam pelayanan kesehatan yang
+                    berkualitas dengan standar internasional.
+                  </p>
+                </div>
+              </div>
+
+              <div class="about__accordion-item">
+                <header class="about__accordion-header">
+                  <i class="bx bx-check-shield about__accordion-icon"></i>
+                  <h3 class="about__accordion-title">Misi</h3>
+                </header>
+                <div class="about__accordion-content">
+                  <p class="about__accordion-description">
+                    1. Memberikan pelayanan kesehatan yang bermutu tinggi<br />
+                    2. Mengembangkan sumber daya manusia yang profesional<br />
+                    3. Menerapkan teknologi medis terkini<br />
+                    4. Menjaga kepuasan pasien sebagai prioritas utama
+                  </p>
+                </div>
+              </div>
+
+              <div class="about__accordion-item">
+                <header class="about__accordion-header">
+                  <i class="bx bx-star about__accordion-icon"></i>
+                  <h3 class="about__accordion-title">Nilai-nilai</h3>
+                </header>
+                <div class="about__accordion-content">
+                  <p class="about__accordion-description">
+                    <b>C</b>aring (Peduli)<br />
+                    <b>I</b>ntegrity (Integritas)<br />
+                    <b>P</b>rofessional (Profesional)<br />
+                    <b>T</b>rustworthy (Dapat Dipercaya)<br />
+                    <b>A</b>ccountable (Bertanggung Jawab)
+                  </p>
+                </div>
+              </div>
+
+              <div class="about__accordion-item">
+                <header class="about__accordion-header">
+                  <i class="bx bx-award about__accordion-icon"></i>
+                  <h3 class="about__accordion-title">Penghargaan</h3>
+                </header>
+                <div class="about__accordion-content">
+                  <p class="about__accordion-description">
+                    - Akreditasi Internasional JCI (2022)<br />
+                    - Rumah Sakit Terbaik versi Kemenkes (2021)<br />
+                    - Penghargaan Patient Safety Award (2020)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Facilities Section -->
+      <section class="facilities section">
+        <div class="container">
+          <span class="section__subtitle">Fasilitas</span>
+          <h2 class="section__title">Fasilitas Kami<span>.</span></h2>
+
+          <div class="facilities__container grid">
+            <div class="facilities__card">
+              <i class="bx bx-building facilities__icon"></i>
+              <h3 class="facilities__title">Gedung Modern</h3>
+              <p class="facilities__description">
+                Bangunan dengan desain modern dan tata ruang yang nyaman untuk
+                pasien.
+              </p>
+            </div>
+            <div class="facilities__card">
+              <i class="bx bx-plus-medical facilities__icon"></i>
+              <h3 class="facilities__title">Perlengkapan Medis</h3>
+              <p class="facilities__description">
+                Peralatan medis terkini untuk diagnosis dan pengobatan yang
+                akurat.
+              </p>
+            </div>
+            <div class="facilities__card">
+              <i class="bx bx-wifi facilities__icon"></i>
+              <h3 class="facilities__title">Fasilitas Pendukung</h3>
+              <p class="facilities__description">
+                WiFi gratis, kantin, area parkir luas, dan fasilitas penunjang
+                lainnya.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <!-- Kolom 1 - Tentang -->
+        <div class="footer__content">
+          <h3 class="footer__title">Layanan Kami</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link" data-target="emergency"
+                >Pelayanan Darurat</a
+              >
+            </li>
+            <li>
+              <a href="doctors.html" class="footer__link"
+                >Bedah Umum & Spesialis</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer__link" data-target="outpatient"
+                >Kardiologi & Jantung</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer__link" data-target="outpatient"
+                >Kebidanan & Kandungan</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer__link" data-target="outpatient"
+                >Pediatri & Anak</a
+              >
+            </li>
+            <li><a href="#" class="footer__link">Rehabilitasi Medis</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 2 - Tautan -->
+        <div class="footer__content">
+          <h3 class="footer__title">Tautan Cepat</h3>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Beranda</a></li>
+            <li><a href="about.html" class="footer__link">Tentang Kami</a></li>
+            <li><a href="services.html" class="footer__link">Layanan</a></li>
+            <li><a href="doctors.html" class="footer__link">Dokter</a></li>
+            <li><a href="contact.html" class="footer__link">Kontak</a></li>
+            <li>
+              <a href="appointment.html" class="footer__link">Janji Temu</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Kolom 3 - Kontak -->
+        <div class="footer__content">
+          <h3 class="footer__title">Kontak Kami</h3>
+          <ul class="footer__contact">
+            <li class="footer__contact-item">
+              <i class="bx bx-map"></i> Jl. Kesehatan No. 123, Jakarta
+            </li>
+            <li class="footer__contact-item">
+              <i class="bx bx-phone"></i> (021) 1234-5678
+            </li>
+            <li class="footer__contact-item">
+              <i class="bx bx-envelope"></i> info@ciptahospital.com
+            </li>
+            <li class="footer__contact-item">
+              <i class="bx bx-time"></i> Buka 24 Jam setiap Hari
+            </li>
+            <li class="footer__contact-item footer__socials">
+              <a href="https://www.facebook.com/lissaadhelia07/" target="_blank"
+                ><i class="bx bxl-facebook-circle"></i
+              ></a>
+              <a href="https://x.com/grtchen_" target="_blank"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/iisa.pizza_/" target="_blank"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/lisa-ardeliana-72a053339/"
+                target="_blank"
+                ><i class="bx bxl-linkedin-square"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="footer__credit">
+      &copy; 2025 Lisa Ardeliana. All Rights Reserved.
+    </div>
+    <!-- Swiper JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

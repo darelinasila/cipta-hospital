@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buat Janji - PT. Cipta Hospital Indonesia</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img src="assets/img/logo.png" alt="Logo" class="logo-img" />
+          Cipta Hospital
+        </a>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link active-link">
+                <i class="bx bx-home-alt-2"></i>
+                <span>Beranda</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">
+                <i class="bx bx-info-circle"></i>
+                <span>Tentang Kami</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="services.html" class="nav__link">
+                <i class="bx bx-plus-medical"></i>
+                <span>Pelayanan</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="doctors.html" class="nav__link">
+                <i class="bx bx-user"></i>
+                <span>Dokter</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">
+                <i class="bx bx-phone"></i>
+                <span>Kontak</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="appointment.html" class="button nav__button">
+          <i class="bx bx-calendar"></i> Buat Janji
+        </a>
+      </nav>
+    </header>
+    <br />
+    <br />
+    <br />
+    <main class="main">
+      <section class="appointment section" id="appointment">
+        <div class="container">
+          <div class="appointment__container grid">
+            <div class="appointment__data">
+              <span class="section__subtitle">Pesan Sekarang</span>
+              <h2 class="section__title">
+                Janji Temu Dokter Profesional Kami<span>.</span>
+              </h2>
+              <p class="appointment__description">
+                Jadwalkan konsultasi Anda dengan mudah dan cepat. Isi formulir
+                berikut untuk membuat janji temu dengan dokter spesialis kami
+                yang berpengalaman.
+              </p>
+              <div class="appointment__info">
+                <div class="appointment__info-item">
+                  <i class="bx bx-time"></i>
+                  <div>
+                    <h3>Jam Operasional</h3>
+                    <p>Senin-Jumat: 08.00-20.00<br />Sabtu: 08.00-15.00</p>
+                  </div>
+                </div>
+                <div class="appointment__info-item">
+                  <i class="bx bx-phone"></i>
+                  <div>
+                    <h3>Butuh Bantuan?</h3>
+                    <p>(021) 1234-5678</p>
+                    <small>Hubungi kami untuk pertanyaan lebih lanjut</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="appointment__form">
+              <form
+                id="appointmentForm"
+                action="#"
+                class="appointment__form-content"
+              >
+                <h3 class="appointment__form-title">
+                  Lengkapi Data Janji Temu Anda
+                </h3>
+                <div class="appointment__form-group">
+                  <label for="name" class="appointment__form-label"
+                    >Nama Lengkap <span class="required">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="appointment__form-input"
+                    placeholder="Contoh: Budi Santoso"
+                    required
+                  />
+                </div>
+                <div class="appointment__form-group">
+                  <label for="phone" class="appointment__form-label"
+                    >Nomor Telepon <span class="required">*</span></label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="appointment__form-input"
+                    placeholder="Contoh: 081234567890"
+                    required
+                  />
+                </div>
+                <div class="appointment__form-group">
+                  <label for="email" class="appointment__form-label"
+                    >Alamat Email <span class="required">*</span></label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="appointment__form-input"
+                    placeholder="Contoh: namaanda@email.com"
+                    required
+                  />
+                </div>
+                <div class="appointment__form-group">
+                  <label for="doctor" class="appointment__form-label"
+                    >Pilih Dokter Spesialis
+                    <span class="required">*</span></label
+                  >
+                  <select id="doctor" class="appointment__form-input" required>
+                    <option value="" disabled selected>
+                      -- Pilih Dokter Spesialis --
+                    </option>
+                    <option value="dr1">
+                      Dr. Adimara Putra, Sp.JP (Jantung)
+                    </option>
+                    <option value="dr2">
+                      Dr. Sekar Ayu, Sp.OG (Kandungan & Kebidanan)
+                    </option>
+                    <option value="dr3">
+                      Dr. Kevin Wijaya, Sp.PD (Penyakit Dalam)
+                    </option>
+                    <option value="dr4">
+                      Dr. Fabiola Rinjani, Sp.A (Anak)
+                    </option>
+                    <option value="dr5">
+                      Dr. Arifin Aditomo, Sp.OT (Tulang & Sendi)
+                    </option>
+                  </select>
+                </div>
+                <div class="appointment__form-group">
+                  <label for="date" class="appointment__form-label"
+                    >Tanggal Janji <span class="required">*</span></label
+                  >
+                  <input
+                    type="date"
+                    id="date"
+                    class="appointment__form-input"
+                    required
+                  />
+                </div>
+                <div class="appointment__form-group">
+                  <label for="time" class="appointment__form-label"
+                    >Waktu Janji <span class="required">*</span></label
+                  >
+                  <input
+                    type="time"
+                    id="time"
+                    class="appointment__form-input"
+                    required
+                  />
+                </div>
+                <div class="appointment__form-group">
+                  <label for="message" class="appointment__form-label"
+                    >Keluhan Singkat (Opsional)</label
+                  >
+                  <textarea
+                    id="message"
+                    class="appointment__form-input"
+                    placeholder="Deskripsikan keluhan Anda secara singkat, misalnya: Demam tinggi sejak 3 hari"
+                    rows="4"
+                  ></textarea>
+                </div>
+                <button type="submit" class="button appointment__form-button">
+                  Ajukan Janji Temu
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="appointmentConfirmationPopup" class="appointment-popup">
+        <div class="feedback-popup-content">
+          <span class="close-button">&times;</span>
+          <div class="feedback-popup-icon">
+            <i class="bx bx-check-circle"></i>
+          </div>
+          <h3 class="feedback-popup-title">Janji Temu Anda Telah Diterima!</h3>
+          <p class="feedback-popup-description">
+            Terima kasih telah membuat janji temu dengan kami. Konfirmasi detail
+            janji Anda telah kami kirimkan melalui email dan SMS. Mohon datang
+            15 menit sebelum waktu janji temu untuk proses registrasi.
+          </p>
+          <div class="confirmation__info-popup">
+            <div class="confirmation__info-item-popup">
+              <h3>Nomor Registrasi</h3>
+              <p id="popupRegNumber">RS20230001</p>
+            </div>
+            <div class="confirmation__info-item-popup">
+              <h3>Tanggal & Waktu</h3>
+              <p id="popupDateTime">Senin, 10 Juli 2023 - 10.00 WIB</p>
+            </div>
+            <div class="confirmation__info-item-popup">
+              <h3>Dokter</h3>
+              <p id="popupDoctorName">Dr. Ahmad Santoso, Sp.JP</p>
+            </div>
+          </div>
+          <button class="button popup-close-button">Tutup</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <!-- Kolom 1 - Tentang -->
+        <div class="footer__content">
+          <h3 class="footer__title">Layanan Kami</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link" data-target="emergency"
+                >Pelayanan Darurat</a
+              >
+            </li>
+            <li>
+              <a href="doctors.html" class="footer__link"
+                >Bedah Umum & Spesialis</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer__link" data-target="outpatient"
+                >Kardiologi & Jantung</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer__link" data-target="outpatient"
+                >Kebidanan & Kandungan</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer__link" data-target="outpatient"
+                >Pediatri & Anak</a
+              >
+            </li>
+            <li><a href="#" class="footer__link">Rehabilitasi Medis</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 2 - Tautan -->
+        <div class="footer__content">
+          <h3 class="footer__title">Tautan Cepat</h3>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Beranda</a></li>
+            <li><a href="about.html" class="footer__link">Tentang Kami</a></li>
+            <li><a href="services.html" class="footer__link">Layanan</a></li>
+            <li><a href="doctors.html" class="footer__link">Dokter</a></li>
+            <li><a href="contact.html" class="footer__link">Kontak</a></li>
+            <li>
+              <a href="appointment.html" class="footer__link">Janji Temu</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Kolom 3 - Kontak -->
+        <div class="footer__content">
+          <h3 class="footer__title">Kontak Kami</h3>
+          <ul class="footer__contact">
+            <li class="footer__contact-item">
+              <i class="bx bx-map"></i> Jl. Kesehatan No. 123, Jakarta
+            </li>
+            <li class="footer__contact-item">
+              <i class="bx bx-phone"></i> (021) 1234-5678
+            </li>
+            <li class="footer__contact-item">
+              <i class="bx bx-envelope"></i> info@ciptahospital.com
+            </li>
+            <li class="footer__contact-item">
+              <i class="bx bx-time"></i> Buka 24 Jam setiap Hari
+            </li>
+            <li class="footer__contact-item footer__socials">
+              <a href="https://www.facebook.com/lissaadhelia07/" target="_blank"
+                ><i class="bx bxl-facebook-circle"></i
+              ></a>
+              <a href="https://x.com/grtchen_" target="_blank"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/iisa.pizza_/" target="_blank"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/lisa-ardeliana-72a053339/"
+                target="_blank"
+                ><i class="bx bxl-linkedin-square"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer__credit">
+      &copy; 2025 Lisa Ardeliana. All Rights Reserved.
+    </div>
+
+    <!-- Scroll Up -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-chevrons-up"></i>
+    </a>
+
+    <!-- Swiper JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const appointmentForm = document.getElementById("appointmentForm");
+        const confirmationPopup = document.getElementById(
+          "appointmentConfirmationPopup"
+        );
+        const closeButtons = confirmationPopup.querySelectorAll(
+          ".close-button, .popup-close-button"
+        );
+
+        // Elements to update dynamically in the popup
+        const popupRegNumber = document.getElementById("popupRegNumber");
+        const popupDateTime = document.getElementById("popupDateTime");
+        const popupDoctorName = document.getElementById("popupDoctorName");
+
+        if (appointmentForm && confirmationPopup) {
+          // PASTIKAN TIDAK ADA KODE DI SINI YANG MEMICU confirmationPopup.style.display = 'flex';
+          // KECUALI DI DALAM appointmentForm.addEventListener('submit', function(event) { ... });
+
+          appointmentForm.addEventListener("submit", function (event) {
+            // <-- Pop-up harus muncul di sini
+            event.preventDefault(); // Mencegah halaman di-refresh
+
+            // Ambil data dari form (contoh, Anda bisa mengembangkannya)
+            const selectedDoctor = appointmentForm.querySelector(
+              "#doctor option:checked"
+            ).textContent;
+            const selectedDate = appointmentForm.querySelector("#date").value;
+            const selectedTime = appointmentForm.querySelector("#time").value;
+
+            const dateObj = new Date(selectedDate);
+            const options = {
+              weekday: "long",
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            };
+            const formattedDate = dateObj.toLocaleDateString("id-ID", options);
+            const formattedTime = selectedTime + " WIB";
+
+            popupRegNumber.textContent =
+              "RS" + Math.floor(Math.random() * 1000000);
+            popupDateTime.textContent = `${formattedDate} - ${formattedTime}`;
+            popupDoctorName.textContent = selectedDoctor;
+
+            // Tampilkan pop-up HANYA DI SINI
+            confirmationPopup.style.display = "flex"; // <--- INI ADALAH TITIK TAMPILNYA POP-UP
+
+            // Opsional: Reset form setelah menampilkan pop-up
+            appointmentForm.reset();
+          });
+
+          // Event listener untuk tombol tutup (X) dan tombol "Tutup" di dalam pop-up
+          closeButtons.forEach((button) => {
+            button.addEventListener("click", function () {
+              confirmationPopup.style.display = "none";
+            });
+          });
+
+          // Event listener untuk menutup pop-up ketika mengklik area di luar pop-up
+          window.addEventListener("click", function (event) {
+            if (event.target === confirmationPopup) {
+              confirmationPopup.style.display = "none";
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

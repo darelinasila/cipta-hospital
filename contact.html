@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak - PT. Cipta Hospital Indonesia</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/img/logo.png" alt="Logo" class="logo-img" />
+        Cipta Hospital
+      </a>
+
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">
+              <i class="bx bx-home-alt-2"></i><span>Beranda</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">
+              <i class="bx bx-info-circle"></i><span>Tentang Kami</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="services.html" class="nav__link">
+              <i class="bx bx-plus-medical"></i><span>Pelayanan</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="doctors.html" class="nav__link">
+              <i class="bx bx-user"></i><span>Dokter</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link active-link">
+              <i class="bx bx-phone"></i><span>Kontak</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="appointment.html" class="button nav__button">
+        <i class="bx bx-calendar"></i> Buat Janji
+      </a>
+    </nav>
+  </header>
+  <br />
+  <br />
+  <main class="main">
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="contact__container container grid">
+        <div class="contact__images">
+          <div class="contact__orbe"></div>
+          <div class="contact__img">
+            <img src="assets/img/telephone.jpg" alt="Kontak Kami" />
+          </div>
+        </div>
+
+        <div class="contact__content">
+          <div class="contact__data">
+            <span class="section__subtitle">Hubungi Kami</span>
+            <h2 class="section__title">Informasi Kontak<span>.</span></h2>
+            <p class="contact__description">
+              Kami siap membantu Anda. Silakan hubungi kami melalui informasi
+              di bawah ini atau kirim pesan langsung.
+            </p>
+          </div>
+
+          <div class="contact__card">
+            <div class="contact__card-box">
+              <div class="contact__card-info">
+                <i class="bx bx-map"></i>
+                <div>
+                  <h3 class="contact__card-title">Alamat</h3>
+                  <p class="contact__card-description">
+                    Jl. Kesehatan No. 123, Jakarta 12345
+                  </p>
+                </div>
+              </div>
+              <a href="https://maps.google.com" target="_blank" class="button contact__card-button"
+                style="width: 100%; text-align: center; margin-top: 1rem">
+                Lihat Peta
+              </a>
+            </div>
+
+            <div class="contact__card-box">
+              <div class="contact__card-info">
+                <i class="bx bxs-phone-call"></i>
+                <div>
+                  <h3 class="contact__card-title">Telepon</h3>
+                  <p class="contact__card-description">
+                    (021) 1234-5678<br />
+                    0812-3456-7890 (24 Jam)
+                  </p>
+                </div>
+              </div>
+              <a href="tel:02112345678" class="button contact__card-button"
+                style="width: 100%; text-align: center; margin-top: 1rem">
+                Telepon Sekarang
+              </a>
+            </div>
+
+            <div class="contact__card-box contact__card-email">
+              <div class="contact__card-info">
+                <div class="contact__card-icon">
+                  <i class="bx bx-envelope"></i>
+                </div>
+                <h3 class="contact__card-title">Email</h3>
+                <div class="contact__card-description">
+                  <p>info@ciptahospital.com</p>
+                  <p>customer@ciptahospital.com</p>
+                </div>
+              </div>
+              <a href="mailto:info@ciptahospital.com" class="button contact__card-button">
+                Kirim Email
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Message Section -->
+    <section class="message section">
+      <div class="container">
+        <div class="message__container">
+          <h2 class="message__title">Kirim Pesan kepada Kami</h2>
+          <form id="messageForm" class="message__form">
+            <div class="message__form-group">
+              <input type="text" placeholder="Nama Anda" class="message__form-input" required />
+              <input type="email" placeholder="Email Anda" class="message__form-input" required />
+            </div>
+            <div class="message__form-group">
+              <input type="text" placeholder="Subjek" class="message__form-input" required />
+            </div>
+            <div class="message__form-group">
+              <textarea placeholder="Pesan Anda" class="message__form-input message__form-textarea" rows="5"
+                required></textarea>
+            </div>
+            <button type="submit" class="button message__form-button">
+              Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+<!-- Feedback Popup -->
+<div class="feedback-popup" id="feedbackPopup">
+  <div class="feedback-popup-content">
+    <div class="feedback-popup-header">
+      <i class="bx bx-check-circle feedback-popup-icon"></i>
+      <h2 class="feedback-popup-title">Pesan Terkirim!</h2>
+    </div>
+    <div class="feedback-popup-body">
+      <p class="feedback-popup-description">
+        Terima kasih atas masukan Anda. Kami akan segera menindaklanjuti pesan Anda.
+      </p>
+    </div>
+    <div class="feedback-popup-footer">
+      <button class="button popup-close-button" onclick="closeFeedbackPopup()">
+        <span class="button-text-feedback">Tutup</span>
+        <i class="bx bx-x button-icon"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+    <!-- Map Section -->
+    <section class="map section">
+      <div class="container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613507864!3d-6.194741395493371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5390917b759%3A0x6b45e839560a85ab!2sMonumen%20Nasional!5e0!3m2!1sen!2sid!4v1629297212921!5m2!1sen!2sid"
+          width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy" class="map__iframe"></iframe>
+      </div>
+    </section>
+  </main>
+    <!-- Footer -->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <!-- Kolom 1 - Tentang -->
+        <div class="footer__content">
+          <h3 class="footer__title">Layanan Kami</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link" data-target="emergency"
+                >Pelayanan Darurat</a
+              >
+            </li>
+            <li>
+              <a href="doctors.html" class="footer__link"
+                >Bedah Umum & Spesialis</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer__link" data-target="outpatient"
+                >Kardiologi & Jantung</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer__link" data-target="outpatient"
+                >Kebidanan & Kandungan</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer__link" data-target="outpatient"
+                >Pediatri & Anak</a
+              >
+            </li>
+            <li><a href="#" class="footer__link">Rehabilitasi Medis</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 2 - Tautan -->
+        <div class="footer__content">
+          <h3 class="footer__title">Tautan Cepat</h3>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Beranda</a></li>
+            <li><a href="about.html" class="footer__link">Tentang Kami</a></li>
+            <li><a href="services.html" class="footer__link">Layanan</a></li>
+            <li><a href="doctors.html" class="footer__link">Dokter</a></li>
+            <li><a href="contact.html" class="footer__link">Kontak</a></li>
+            <li>
+              <a href="appointment.html" class="footer__link">Janji Temu</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Kolom 3 - Kontak -->
+        <div class="footer__content">
+          <h3 class="footer__title">Kontak Kami</h3>
+          <ul class="footer__contact">
+            <li class="footer__contact-item">
+              <i class="bx bx-map"></i> Jl. Kesehatan No. 123, Jakarta
+            </li>
+            <li class="footer__contact-item">
+              <i class="bx bx-phone"></i> (021) 1234-5678
+            </li>
+            <li class="footer__contact-item">
+              <i class="bx bx-envelope"></i> info@ciptahospital.com
+            </li>
+            <li class="footer__contact-item">
+              <i class="bx bx-time"></i> Buka 24 Jam setiap Hari
+            </li>
+            <li class="footer__contact-item footer__socials">
+              <a href="https://www.facebook.com/lissaadhelia07/" target="_blank"
+                ><i class="bx bxl-facebook-circle"></i
+              ></a>
+              <a href="https://x.com/grtchen_" target="_blank"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/iisa.pizza_/" target="_blank"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/lisa-ardeliana-72a053339/" target="_blank"
+                ><i class="bx bxl-linkedin-square"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer__credit">
+      &copy; 2025 Lisa Ardeliana. All Rights Reserved.
+    </div>
+
+    <!-- Scroll Up -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-chevrons-up"></i>
+    </a>
+
+    <!-- Swiper JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

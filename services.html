@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/turu.png"
+      type="image/x-icon"
+    />
+
+    <title>Pelayanan - Cipta Hospital Indonesia</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img src="assets/img/logo.png" alt="Logo" class="logo-img" />
+          Cipta Hospital
+        </a>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">
+                <i class="bx bx-home-alt-2"></i>
+                <span>Beranda</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">
+                <i class="bx bx-info-circle"></i>
+                <span>Tentang Kami</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="services.html" class="nav__link active-link">
+                <i class="bx bx-plus-medical"></i>
+                <span>Pelayanan</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="doctors.html" class="nav__link">
+                <i class="bx bx-user"></i>
+                <span>Dokter</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">
+                <i class="bx bx-phone"></i>
+                <span>Kontak</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="appointment.html" class="button nav__button">
+          <i class="bx bx-calendar"></i> Buat Janji
+        </a>
+      </nav>
+    </header>
+    <br />
+    <br />
+    <main class="main">
+      <!-- Services Section -->
+      <section class="services section" id="services">
+        <div class="container">
+          <span class="section__subtitle">Layanan Kami</span>
+          <h2 class="section__title">Pelayanan Medis<span>.</span></h2>
+
+          <div class="services__tabs">
+            <div class="services__tab active" data-target="inpatient">
+              <i class="bx bx-bed"></i> Rawat Inap
+            </div>
+            <div class="services__tab" data-target="outpatient">
+              <i class="bx bx-clinic"></i> Rawat Jalan
+            </div>
+            <div class="services__tab" data-target="emergency">
+              <i class="bx bxs-ambulance"></i> Gawat Darurat
+            </div>
+          </div>
+
+          <!-- Rawat Inap Content -->
+          <div class="services__content active" id="inpatient">
+            <div class="services__group">
+              <div class="services__item">
+                <i class="bx bx-check services__item-icon"></i>
+                <div>
+                  <h3 class="services__item-title">Kamar VIP</h3>
+                  <p class="services__item-description">
+                    Kamar dengan fasilitas lengkap dan privasi maksimal.
+                  </p>
+                </div>
+              </div>
+              <div class="services__item">
+                <i class="bx bx-check services__item-icon"></i>
+                <div>
+                  <h3 class="services__item-title">Kelas 1</h3>
+                  <p class="services__item-description">
+                    Kamar dengan 2 tempat tidur dan fasilitas lengkap.
+                  </p>
+                </div>
+              </div>
+              <div class="services__item">
+                <i class="bx bx-check services__item-icon"></i>
+                <div>
+                  <h3 class="services__item-title">Kelas 2</h3>
+                  <p class="services__item-description">
+                    Kamar dengan 4 tempat tidur dan fasilitas standar.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="services__image multiple">
+              <div class="image-frame">
+                <img
+                  src="https://img.freepik.com/free-photo/hospital-room-interior_181624-15732.jpg?t=st=1751412331~exp=1751415931~hmac=78db16d634cf916498642f0591d978911f89a5848ed1ce0fd301332dbfa5e81d&w=1380"
+                  alt="Kelas 2"
+                />
+              </div>
+              <div class="image-frame">
+                <img
+                  src="https://img.freepik.com/premium-photo/nakhonratchasima-thailand-november-15-2014-hospital-room-with-beds-comfortable-medical-equipped-modern-hospital-november-15-2014-nakhonratchasima-thailand-xaxa_84831-486.jpg?w=1380"
+                  alt="Kelas 1"
+                />
+              </div>
+              <div class="image-frame">
+                <img
+                  src="https://img.freepik.com/premium-photo/advanced-hospital-room-with-state-art-medical-equipment-calming-modern-design_207634-14954.jpg?w=1380"
+                  alt="VIP"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Rawat Jalan Content -->
+          <div class="services__content" id="outpatient">
+            <div class="outpatient__header">
+              <h3 class="services__subtitle">Layanan Rawat Jalan</h3>
+              <p class="outpatient__description">
+                Pelayanan medis tanpa perlu rawat inap dengan dokter spesialis
+                berpengalaman dan fasilitas modern.
+              </p>
+            </div>
+
+            <!-- Poliklinik -->
+            <div class="outpatient__section">
+              <h4 class="outpatient__section-title">
+                <i class="bx bx-clinic"></i> Poliklinik Spesialis
+              </h4>
+
+              <div class="clinic__grid">
+                <div class="clinic__card">
+                  <div class="clinic__icon">
+                    <i class="bx bx-heart"></i>
+                  </div>
+                  <div class="clinic__content">
+                    <h5 class="clinic__title">Poli Jantung</h5>
+                    <p class="clinic__schedule">
+                      <i class="bx bx-calendar"></i> Senin-Jumat: 08.00–14.00
+                    </p>
+                    <ul class="clinic__services">
+                      <li><i class="bx bx-check"></i> Konsultasi Kardiologi</li>
+                      <li><i class="bx bx-check"></i> EKG & Treadmill Test</li>
+                      <li><i class="bx bx-check"></i> Pemeriksaan Darah</li>
+                    </ul>
+                    <a href="#" class="button clinic__button">Lihat Dokter</a>
+                  </div>
+                </div>
+
+                <div class="clinic__card">
+                  <div class="clinic__icon">
+                    <i class="bx bx-brain"></i>
+                  </div>
+                  <div class="clinic__content">
+                    <h5 class="clinic__title">Poli Saraf</h5>
+                    <p class="clinic__schedule">
+                      <i class="bx bx-calendar"></i> Selasa & Kamis: 09.00–15.00
+                    </p>
+                    <ul class="clinic__services">
+                      <li><i class="bx bx-check"></i> Konsultasi Neurologi</li>
+                      <li><i class="bx bx-check"></i> Pemeriksaan EEG</li>
+                      <li><i class="bx bx-check"></i> EMG</li>
+                    </ul>
+                    <a href="#" class="button clinic__button">Lihat Dokter</a>
+                  </div>
+                </div>
+
+                <div class="clinic__card">
+                  <div class="clinic__icon">
+                    <i class="bx bx-child"></i>
+                  </div>
+                  <div class="clinic__content">
+                    <h5 class="clinic__title">Poli Anak</h5>
+                    <p class="clinic__schedule">
+                      <i class="bx bx-calendar"></i> Setiap Hari: 08.00–16.00
+                    </p>
+                    <ul class="clinic__services">
+                      <li><i class="bx bx-check"></i> Imunisasi</li>
+                      <li><i class="bx bx-check"></i> Tumbuh Kembang</li>
+                      <li><i class="bx bx-check"></i> Nutrisi Anak</li>
+                    </ul>
+                    <a href="#" class="button clinic__button">Lihat Dokter</a>
+                  </div>
+                </div>
+
+                <div class="clinic__card">
+                  <div class="clinic__icon">
+                    <i class="bx bx-female"></i>
+                  </div>
+                  <div class="clinic__content">
+                    <h5 class="clinic__title">Poli Kandungan</h5>
+                    <p class="clinic__schedule">
+                      <i class="bx bx-calendar"></i> Senin-Sabtu: 08.00–12.00
+                    </p>
+                    <ul class="clinic__services">
+                      <li><i class="bx bx-check"></i> USG Kehamilan</li>
+                      <li><i class="bx bx-check"></i> Pemeriksaan ANC</li>
+                      <li><i class="bx bx-check"></i> Konsultasi KB</li>
+                    </ul>
+                    <a href="#" class="button clinic__button">Lihat Dokter</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Layanan Penunjang -->
+            <div class="outpatient__section">
+              <h4 class="outpatient__section-title">
+                <i class="bx bx-test-tube"></i> Layanan Penunjang
+              </h4>
+              <br />
+              <div class="support__services">
+                <div class="support__card">
+                  <img src="assets/img/laboratorium.jpg" alt="Laboratorium" />
+                  <div class="support__info">
+                    <h5>Laboratorium</h5>
+                    <ul class="support__list">
+                      <li>
+                        <i class="bx bx-check"></i> Pemeriksaan Darah & Urine
+                      </li>
+                      <li><i class="bx bx-check"></i> Hasil dalam 2–24 jam</li>
+                      <li><i class="bx bx-check"></i> Buka Setiap Hari</li>
+                    </ul>
+                    <a href="#" class="button support__button"
+                      >Panduan Persiapan</a
+                    >
+                  </div>
+                </div>
+
+                <div class="support__card">
+                  <img src="assets/img/radiologi.jpg" alt="Radiologi" />
+                  <div class="support__info">
+                    <h5>Radiologi</h5>
+                    <ul class="support__list">
+                      <li><i class="bx bx-check"></i> X-Ray, USG, CT Scan</li>
+                      <li><i class="bx bx-check"></i> Hasil Cepat (1–4 jam)</li>
+                      <li><i class="bx bx-check"></i> Tanpa Rujukan</li>
+                    </ul>
+                    <a href="#" class="button support__button">Buat Janji</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Prosedur Pendaftaran -->
+            <div class="outpatient__section">
+              <h4 class="outpatient__section-title">
+                <i class="bx bx-clipboard"></i> Prosedur Pendaftaran
+              </h4>
+
+              <div class="procedure__flow">
+                <div class="flow__step">
+                  <div class="step__number">1</div>
+                  <div class="step__content">
+                    <h5>Daftar Online/Offline</h5>
+                    <p>Registrasi via aplikasi atau langsung di loket.</p>
+                  </div>
+                </div>
+                <div class="flow__connector">
+                  <i class="bx bx-chevron-right"></i>
+                </div>
+                <div class="flow__step">
+                  <div class="step__number">2</div>
+                  <div class="step__content">
+                    <h5>Pembayaran</h5>
+                    <p>Bayar administrasi atau verifikasi asuransi.</p>
+                  </div>
+                </div>
+                <div class="flow__connector">
+                  <i class="bx bx-chevron-right"></i>
+                </div>
+                <div class="flow__step">
+                  <div class="step__number">3</div>
+                  <div class="step__content">
+                    <h5>Pemeriksaan</h5>
+                    <p>Konsultasi dengan dokter spesialis.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Pendaftaran Online -->
+            <div class="outpatient__online">
+              <div class="online__content">
+                <h4><i class="bx bx-world"></i> Daftar Online Sekarang!</h4>
+                <p>Hindari antrian dengan pendaftaran online.</p>
+              </div>
+              <a href="appointment.html" class="online__button">
+                <i class="bx bx-calendar"></i> Buat Janji
+              </a>
+            </div>
+          </div>
+
+          <!-- Gawat Darurat Content -->
+          <div class="services__content" id="emergency">
+            <div class="emergency__header">
+              <h3 class="services__subtitle">Unit Gawat Darurat 24 Jam</h3>
+              <p class="emergency__description">
+                Layanan gawat darurat kami siap melayani 24 jam setiap hari
+                dengan tim medis profesional dan peralatan lengkap.
+              </p>
+            </div>
+
+            <!-- Fasilitas UGD -->
+            <div class="emergency__facilities">
+              <h4 class="emergency__section-title">
+                <i class="bx bx-plus-medical"></i> Fasilitas UGD
+              </h4>
+
+              <div class="facility__grid">
+                <div class="facility__card">
+                  <div class="facility__icon">
+                    <i class="bx bx-heart-circle"></i>
+                  </div>
+                  <h5 class="facility__title">Resusitasi Jantung</h5>
+                  <p class="facility__desc">
+                    Penanganan darurat henti jantung dengan defibrillator dan
+                    tim khusus
+                  </p>
+                </div>
+
+                <div class="facility__card">
+                  <div class="facility__icon">
+                    <i class="bx bx-injection"></i>
+                  </div>
+                  <h5 class="facility__title">Trauma Center</h5>
+                  <p class="facility__desc">
+                    Penanganan khusus trauma fisik akibat kecelakaan atau cedera
+                  </p>
+                </div>
+
+                <div class="facility__card">
+                  <div class="facility__icon">
+                    <i class="bx bx-child"></i>
+                  </div>
+                  <h5 class="facility__title">UGD Anak</h5>
+                  <p class="facility__desc">
+                    Unit khusus penanganan gawat darurat pasien anak
+                  </p>
+                </div>
+
+                <div class="facility__card">
+                  <div class="facility__icon">
+                    <i class="bx bx-brain"></i>
+                  </div>
+                  <h5 class="facility__title">Stroke Center</h5>
+                  <p class="facility__desc">
+                    Penanganan golden period untuk kasus stroke akut
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Layanan Ambulans -->
+            <div class="emergency__ambulance">
+              <h4 class="emergency__section-title">
+                <i class="bx bx-ambulance"></i> Layanan Ambulans
+              </h4>
+
+              <div class="ambulance__types">
+                <div class="ambulance__card">
+                  <img
+                    src="assets/img/ambulan standar.jpg"
+                    alt="Ambulans Standar"
+                  />
+                  <div class="ambulance__info">
+                    <h5>Ambulans Standar</h5>
+                    <ul>
+                      <li><i class="bx bx-check"></i> Peralatan P3K lengkap</li>
+                      <li>
+                        <i class="bx bx-check"></i> Tenaga EMT bersertifikat
+                      </li>
+                      <li>
+                        <i class="bx bx-check"></i> Oksigen dan alat bantu napas
+                      </li>
+                    </ul>
+                    <p class="ambulance__contact">
+                      <i class="bx bx-phone"></i> Hubungi: (021) 1234-5678
+                    </p>
+                  </div>
+                </div>
+
+                <div class="ambulance__card">
+                  <img
+                    src="assets/img/ambulan darurat.jpg"
+                    alt="Ambulans ICU"
+                  />
+                  <div class="ambulance__info">
+                    <h5>Ambulans ICU</h5>
+                    <ul>
+                      <li>
+                        <i class="bx bx-check"></i> Peralatan lengkap seperti
+                        ICU
+                      </li>
+                      <li>
+                        <i class="bx bx-check"></i> Dokter spesialis pendamping
+                      </li>
+                      <li>
+                        <i class="bx bx-check"></i> Monitor jantung dan
+                        pernapasan
+                      </li>
+                      <li><i class="bx bx-check"></i> Obat-obatan emergensi</li>
+                    </ul>
+                    <p class="ambulance__contact">
+                      <i class="bx bx-phone"></i> Hubungi: (021) 8765-4321
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <!-- Prosedur Darurat -->
+            <div class="emergency__procedures">
+              <h4 class="emergency__section-title">
+                <i class="bx bx-time"></i> Prosedur Gawat Darurat
+              </h4>
+
+              <div class="procedure__steps">
+                <div class="procedure__step">
+                  <div class="step__number">1</div>
+                  <div class="step__content">
+                    <h5>Triage</h5>
+                    <p>
+                      Penilaian prioritas pasien berdasarkan tingkat kegawatan
+                    </p>
+                  </div>
+                </div>
+
+                <div class="procedure__step">
+                  <div class="step__number">2</div>
+                  <div class="step__content">
+                    <h5>Stabilisasi</h5>
+                    <p>Penanganan segera untuk kondisi yang mengancam nyawa</p>
+                  </div>
+                </div>
+
+                <div class="procedure__step">
+                  <div class="step__number">3</div>
+                  <div class="step__content">
+                    <h5>Diagnosis</h5>
+                    <p>
+                      Pemeriksaan penunjang (lab, radiologi) sesuai kebutuhan
+                    </p>
+                  </div>
+                </div>
+
+                <div class="procedure__step">
+                  <div class="step__number">4</div>
+                  <div class="step__content">
+                    <h5>Perawatan</h5>
+                    <p>Perawatan intensif atau rujukan ke unit terkait</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Emergency Contact -->
+            <div class="emergency__contact-box">
+              <div class="contact__info">
+                <h4>
+                  <i class="bx bx-alarm-exclamation"></i> Dalam Keadaan Darurat?
+                </h4>
+                <p>Tim kami siap membantu 24/7</p>
+              </div>
+              <a href="tel:02112345678" class="emergency__button">
+                <i class="bx bx-phone-call"></i> PANGGIL SEKARANG: (021)
+                1234-5678
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Specializations Section -->
+      <section class="specializations section">
+        <div class="container">
+          <span class="section__subtitle">Spesialisasi</span>
+          <h2 class="section__title">Spesialisasi Medis<span>.</span></h2>
+
+          <div class="specializations__container grid">
+            <div class="specializations__card">
+              <img
+                src="assets/img/dokter-1.jpg"
+                alt="Kardiologi"
+                class="specializations__img"
+              />
+              <h3 class="specializations__title">Kardiologi</h3>
+              <p class="specializations__description">
+                Penanganan penyakit jantung dan pembuluh darah dengan teknologi
+                terkini.
+              </p>
+              <a href="doctors.html" class="button specializations__button">
+                <i class="bx bx-right-arrow-alt"></i> Lihat Detail
+              </a>
+            </div>
+
+            <div class="specializations__card">
+              <img
+                src="assets/img/dokter-4.jpg"
+                alt="Neurologi"
+                class="specializations__img"
+              />
+              <h3 class="specializations__title">Neurologi</h3>
+              <p class="specializations__description">
+                Spesialisasi dalam penanganan gangguan sistem saraf dan otak.
+              </p>
+              <a href="doctors.html" class="button specializations__button">
+                <i class="bx bx-right-arrow-alt"></i> Lihat Detail
+              </a>
+            </div>
+
+            <div class="specializations__card">
+              <img
+                src="assets/img/dokter-5.jpg"
+                alt="Orthopedi"
+                class="specializations__img"
+              />
+              <h3 class="specializations__title">Orthopedi</h3>
+              <p class="specializations__description">
+                Perawatan untuk masalah tulang, sendi, dan otot dengan
+                pendekatan modern.
+              </p>
+              <a href="doctors.html" class="button specializations__button">
+                <i class="bx bx-right-arrow-alt"></i> Lihat Detail
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <!-- Kolom 1 - Tentang -->
+        <div class="footer__content">
+          <h3 class="footer__title">Layanan Kami</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link" data-target="emergency"
+                >Pelayanan Darurat</a
+              >
+            </li>
+            <li>
+              <a href="doctors.html" class="footer__link"
+                >Bedah Umum & Spesialis</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer__link" data-target="outpatient"
+                >Kardiologi & Jantung</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer__link" data-target="outpatient"
+                >Kebidanan & Kandungan</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer__link" data-target="outpatient"
+                >Pediatri & Anak</a
+              >
+            </li>
+            <li><a href="#" class="footer__link">Rehabilitasi Medis</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 2 - Tautan -->
+        <div class="footer__content">
+          <h3 class="footer__title">Tautan Cepat</h3>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Beranda</a></li>
+            <li><a href="about.html" class="footer__link">Tentang Kami</a></li>
+            <li><a href="services.html" class="footer__link">Layanan</a></li>
+            <li><a href="doctors.html" class="footer__link">Dokter</a></li>
+            <li><a href="contact.html" class="footer__link">Kontak</a></li>
+            <li>
+              <a href="appointment.html" class="footer__link">Janji Temu</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Kolom 3 - Kontak -->
+        <div class="footer__content">
+          <h3 class="footer__title">Kontak Kami</h3>
+          <ul class="footer__contact">
+            <li class="footer__contact-item">
+              <i class="bx bx-map"></i> Jl. Kesehatan No. 123, Jakarta
+            </li>
+            <li class="footer__contact-item">
+              <i class="bx bx-phone"></i> (021) 1234-5678
+            </li>
+            <li class="footer__contact-item">
+              <i class="bx bx-envelope"></i> info@ciptahospital.com
+            </li>
+            <li class="footer__contact-item">
+              <i class="bx bx-time"></i> Buka 24 Jam setiap Hari
+            </li>
+            <li class="footer__contact-item footer__socials">
+              <a href="https://www.facebook.com/lissaadhelia07/" target="_blank"
+                ><i class="bx bxl-facebook-circle"></i
+              ></a>
+              <a href="https://x.com/grtchen_" target="_blank"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/iisa.pizza_/" target="_blank"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/lisa-ardeliana-72a053339/"
+                target="_blank"
+                ><i class="bx bxl-linkedin-square"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer__credit">
+      &copy; 2025 Lisa Ardeliana. All Rights Reserved.
+    </div>
+
+    <!-- Scroll Up -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-chevrons-up"></i>
+    </a>
+
+    <!-- Swiper JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>PT. Cipta Hospital Indonesia</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img src="assets/img/logo.png" alt="Logo" class="logo-img" />
+          Cipta Hospital
+        </a>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link active-link">
+                <i class="bx bx-home-alt-2"></i>
+                <span>Beranda</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">
+                <i class="bx bx-info-circle"></i>
+                <span>Tentang Kami</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="services.html" class="nav__link">
+                <i class="bx bx-plus-medical"></i>
+                <span>Pelayanan</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="doctors.html" class="nav__link">
+                <i class="bx bx-user"></i>
+                <span>Dokter</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">
+                <i class="bx bx-phone"></i>
+                <span>Kontak</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="appointment.html" class="button nav__button">
+          <i class="bx bx-calendar"></i> Buat Janji
+        </a>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+      <!-- Home Section -->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">
+              Perawatan Kesehatan <br />
+              Terbaik Untuk <br />
+              Anda dan Keluarga
+            </h1>
+            <p class="home__description">
+              PT. Cipta Hospital Indonesia memberikan pelayanan kesehatan
+              terpadu dengan fasilitas modern dan tenaga medis profesional.
+            </p>
+
+            <div class="home__value">
+              <div>
+                <h1 class="home__value-number">24/7 <span>Jam</span></h1>
+                <span class="home__value-description">Layanan Darurat</span>
+              </div>
+              <div>
+                <h1 class="home__value-number">50+ <span>Dokter</span></h1>
+                <span class="home__value-description">Spesialis</span>
+              </div>
+              <div>
+                <h1 class="home__value-number">1000+ <span>Kamar</span></h1>
+                <span class="home__value-description">Rawat Inap</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="home__images">
+            <div class="home__orbe"></div>
+            <div class="home__img">
+              <img
+                src="https://cdn0-production-assets-kly.akamaized.net/medias/1411942/small-portrait/059095200_1479717151-24.jpg "
+                alt="Rumah Sakit"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services section" id="services">
+        <div class="container">
+          <span class="section__subtitle">Layanan Kami</span>
+          <h2 class="section__title">Pelayanan Unggulan<span>.</span></h2>
+
+          <div class="services__container grid">
+            <div class="services__card">
+              <i class="bx bx-heart services__icon"></i>
+              <h3 class="services__title">Kardiologi</h3>
+              <p class="services__description">
+                Pelayanan jantung terpadu dengan teknologi terkini untuk
+                diagnosis dan perawatan.
+              </p>
+            </div>
+            <div class="services__card">
+              <i class="bx bx-brain services__icon"></i>
+              <h3 class="services__title">Neurologi</h3>
+              <p class="services__description">
+                Spesialisasi dalam penanganan gangguan sistem saraf dan otak.
+              </p>
+            </div>
+            <div class="services__card">
+              <i class="bx bx-bone services__icon"></i>
+              <h3 class="services__title">Orthopedi</h3>
+              <p class="services__description">
+                Perawatan untuk masalah tulang, sendi, dan otot dengan
+                pendekatan modern.
+              </p>
+            </div>
+          </div>
+
+          <div class="services__button">
+            <a href="services.html" class="button">Lihat Semua Layanan</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Doctors Section -->
+      <section class="doctors section" id="doctors">
+        <div class="container">
+          <span class="section__subtitle">Tim Kami</span>
+          <h2 class="section__title">Dokter Spesialis<span>.</span></h2>
+
+          <div class="doctors__container swiper">
+            <div class="swiper-wrapper">
+              <!-- Dokter 1 -->
+              <div class="doctors__card swiper-slide">
+                <img
+                  src="assets/img/dokter-1.jpg"
+                  alt="Dokter"
+                  class="doctors__img"
+                />
+                <h3 class="doctors__name">Dr. Adimara Putra, Sp.JP</h3>
+                <p class="doctors__specialty">Spesialis Jantung</p>
+              </div>
+
+              <!-- Dokter 2 -->
+              <div class="doctors__card swiper-slide">
+                <img
+                  src="assets/img/dokter-2.jpg"
+                  alt="Dokter"
+                  class="doctors__img"
+                />
+                <h3 class="doctors__name">Dr. Sekar Ayu, Sp.OG</h3>
+                <p class="doctors__specialty">Spesialis Kandungan</p>
+              </div>
+
+              <!-- Dokter 3 -->
+              <div class="doctors__card swiper-slide">
+                <img
+                  src="assets/img/dokter-3.jpg"
+                  alt="Dokter"
+                  class="doctors__img"
+                />
+                <h3 class="doctors__name">Dr. Kevin Wijaya, Sp.PD</h3>
+                <p class="doctors__specialty">Spesialis Penyakit Dalam</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="bx bx-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="bx bx-chevron-left"></i>
+            </div>
+          </div>
+
+          <div class="doctors__button">
+            <a href="doctors.html" class="button">Lihat Semua Dokter</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Emergency Section -->
+      <section class="emergency section">
+        <div class="emergency__container container grid">
+          <div class="emergency__content">
+            <h2 class="emergency__title">Layanan Darurat 24 Jam</h2>
+            <p class="emergency__description">
+              Tim medis kami siap memberikan pertolongan pertama dan perawatan
+              darurat kapan saja.
+            </p>
+          </div>
+
+          <div class="emergency__contact">
+            <div class="emergency__info">
+              <i class="bx bx-phone"></i>
+              <div>
+                <h3>Hubungi Kami</h3>
+                <p>(021) 1234-5678</p>
+              </div>
+            </div>
+            <a href="tel:02112345678" class="button">Telepon Sekarang</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <!-- Kolom 1 - Tentang -->
+        <div class="footer__content">
+          <h3 class="footer__title">Layanan Kami</h3>
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer__link" data-target="emergency"
+                >Pelayanan Darurat</a
+              >
+            </li>
+            <li>
+              <a href="doctors.html" class="footer__link"
+                >Bedah Umum & Spesialis</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer__link" data-target="outpatient"
+                >Kardiologi & Jantung</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer__link" data-target="outpatient"
+                >Kebidanan & Kandungan</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer__link" data-target="outpatient"
+                >Pediatri & Anak</a
+              >
+            </li>
+            <li><a href="#" class="footer__link">Rehabilitasi Medis</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 2 - Tautan -->
+        <div class="footer__content">
+          <h3 class="footer__title">Tautan Cepat</h3>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Beranda</a></li>
+            <li><a href="about.html" class="footer__link">Tentang Kami</a></li>
+            <li><a href="services.html" class="footer__link">Layanan</a></li>
+            <li><a href="doctors.html" class="footer__link">Dokter</a></li>
+            <li><a href="contact.html" class="footer__link">Kontak</a></li>
+            <li>
+              <a href="appointment.html" class="footer__link">Janji Temu</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Kolom 3 - Kontak -->
+        <div class="footer__content">
+          <h3 class="footer__title">Kontak Kami</h3>
+          <ul class="footer__contact">
+            <li class="footer__contact-item">
+              <i class="bx bx-map"></i> Jl. Kesehatan No. 123, Jakarta
+            </li>
+            <li class="footer__contact-item">
+              <i class="bx bx-phone"></i> (021) 1234-5678
+            </li>
+            <li class="footer__contact-item">
+              <i class="bx bx-envelope"></i> info@ciptahospital.com
+            </li>
+            <li class="footer__contact-item">
+              <i class="bx bx-time"></i> Buka 24 Jam setiap Hari
+            </li>
+            <li class="footer__contact-item footer__socials">
+              <a href="https://www.facebook.com/lissaadhelia07/" target="_blank"
+                ><i class="bx bxl-facebook-circle"></i
+              ></a>
+              <a href="https://x.com/grtchen_" target="_blank"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/iisa.pizza_/" target="_blank"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/lisa-ardeliana-72a053339/" target="_blank"
+                ><i class="bx bxl-linkedin-square"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer__credit">
+      &copy; 2025 Lisa Ardeliana. All Rights Reserved.
+    </div>
+
+    <!-- Scroll Up -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-chevrons-up"></i>
+    </a>
+
+    <!-- Swiper JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
